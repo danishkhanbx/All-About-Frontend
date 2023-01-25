@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class, ID and Other Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#head").hide();
+                $(".para").hide();
+            //  $("*").hide(); // All actions
+                $(this).hide();  // hide the calling button Hide
+                $(":button").hide(); // select all the buttons and hide
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <h2 id="head">ID, This is a heading.</h2>
+    <p class="para">Class, sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <button>Hide</button>
+
+</body>
+</html>

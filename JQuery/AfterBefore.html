@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>After and Before</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            
+            $("#btn1").click(function()
+            {
+                $("img").before("<b> Text Added Before Element </b>");
+            });
+
+            $("#btn2").click(function()
+            {
+                $("img").after("<i> Text Added After Element </i>");
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <img src="/Images/GamingDog.png" height="150" width="150"><br><br>
+    <button id="btn1">Insert After</button>
+    <button id="btn2">Insert Before</button>
+
+</body>
+</html>

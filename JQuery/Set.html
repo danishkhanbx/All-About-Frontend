@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#button1").click(function()
+            {
+                $("#text1").text("New Text line");
+            });
+
+            $("#button2").click(function()
+            {
+                $("#text2").html("<b> Bold Text line</b>");
+            }); 
+
+            $("#button3").click(function()
+            {
+                $("#name").val("Danish Khan");
+            });         
+
+            $("#button4").click(function()
+            {
+                $("#go").attr("href", "https://facebook.com");
+                $("#go").text("Facebook.com");
+            });  
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p id="text1">Text line 1.</p>
+        <p id="text2">Text line 2.</p>
+        <button id="button1">Paste Text</button>
+        <button id="button2">Paste HTML</button>
+        
+        <p>Name: <input type="text" id="name" value="John Smith"></p>
+        <button id="button3">Set Value</button>
+    </div>
+
+    <div>
+        <p><a href="https://www.google.com" id="go">Goggle.com</a></p>
+        <button id="button4">Change Link</button>
+    </div>
+</body>
+</html>

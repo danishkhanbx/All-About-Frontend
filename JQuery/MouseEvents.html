@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Mouse Click
+        // $(document).ready(function()
+        // {
+        //     $("p").dblclick(function()   
+        //     {
+        //         $(this).hide();
+        //     });
+        // });
+
+        // Mouse Enter
+        // $(document).ready(function()
+        // {
+        //     $("#p1").mouseenter(function()   
+        //     {
+        //         alert("Your Mouse Entered Paragraph 1");
+        //     });
+        // });
+
+        // Mouse Leave
+        // $(document).ready(function()
+        // {
+        //     $("#p1").mouseleave(function()   
+        //     {
+        //         alert("Your Mouse Leaved Paragraph 1");
+        //     });
+        // });
+
+        // Mouse Down
+        // $(document).ready(function()
+        // {
+        //     $("#p1").mousedown(function()   
+        //     {
+        //         alert("You Click Mouse Button on Paragraph 1");
+        //     });
+        // });
+
+        // Mouse Up
+        $(document).ready(function()
+        {
+            $("#p1").mouseup(function()   
+            {
+                alert("You Let go of Mouse Click Button on Paragraph 1");
+            });
+        });
+
+
+
+    </script>
+</head>
+<body>
+    <p>Double Click To Hide</p>
+    <br>
+    <p id="p1">This is a Paragraph 1</p>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove and Empty</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#button1").click(function()
+            {
+                $("#square").remove();
+            });
+            $("#button2").click(function()
+            {
+                $("#square").empty();
+            });
+        });
+    </script>
+    <style>
+        #square{
+            background-color: blue;
+            height: 160px;
+            width: 160px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="button1">Remove</button>
+    <button id="button2">Empty</button>
+    <div id="square">Sample Text</div>
+</body>
+</html>

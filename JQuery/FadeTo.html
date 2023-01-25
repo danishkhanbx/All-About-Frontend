@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fade Toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#div1").fadeTo(1000, 0.20);
+                $("#div2").fadeTo(1000, 0.40);
+                $("#div3").fadeTo(1000, 0.60);
+                $("#div4").fadeTo(1000, 0.80);
+            });
+        });
+
+
+    </script>
+
+    <style>
+        .box{
+            width: 160px;
+            height: 160px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <button>Fade</button>
+    <div id="div1" class="box"></div><br>
+    <div id="div2" class="box"></div><br>
+    <div id="div3" class="box"></div><br>
+    <div id="div4" class="box"></div><br>
+</body>
+</html>

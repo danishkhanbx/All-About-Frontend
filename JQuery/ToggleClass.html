@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle: Add & Remove Class</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            // $("button").click(function()
+            // {
+            //     $("h1, h2, p").addClass("red");
+            //     $("div").addClass("big red");
+            // });
+
+            // $("button").click(function()
+            // {
+            //     $("h1, h2, p").removeClass("red");
+            // });
+
+            $("button").click(function()
+            {
+                // Remove and Add Toggle
+                $("h1, h2, p, div").toggleClass("red");
+            });
+        });
+    </script>
+    <style>
+        .red{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red">Heading 1</h1>
+    <h2 class="red">Heading 2</h2>
+
+    <p class="red">Text line 1</p>
+    <p class="red">Text line 2</p>
+
+    <div class="red">Text line 3</div><br>
+
+    <!-- <button  id="btn1">Add Classes</button>
+    <button  id="btn2">Remove Classes</button> -->
+    <button  id="btn3">Toggle Classes</button>
+
+</body>
+</html>

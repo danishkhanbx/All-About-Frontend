@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Append and Prepend</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#btn1").click(function()
+            {
+                $("p").append("<b> More text </b>");
+            });
+
+            $("#btn2").click(function()
+            {
+                $("ol").append("<li>Ball Sport</li>");
+            });
+
+            $("#btn3").click(function()
+            {
+                $("p").prepend("<b> More text </b>");
+            });
+
+            $("#btn4").click(function()
+            {
+                $("ol").prepend("<li>Ball Sport</li>");
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <p>This is a Paragraph</p>
+    <ol>
+        <li>Base</li>
+        <li>Basket</li>
+        <li>Foot</li>
+    </ol>
+    <button id="btn1">Append Text</button>
+    <button id="btn2">Append List</button>
+    <button id="btn3">Prepend Text</button>
+    <button id="btn4">Prepend List</button>
+</body>
+</html>

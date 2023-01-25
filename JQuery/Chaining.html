@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chaining</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#square").css("background", "red")
+                    .slideUp(2000)
+                    .slideDown(2000);
+            });
+        });
+    </script>
+
+    <style>
+        #square{
+            background-color: blue;
+            height: 160px;
+            width: 160px;
+            margin-top: 5px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button>Animate</button>
+    <div id="square"></div>
+
+</body>
+</html>

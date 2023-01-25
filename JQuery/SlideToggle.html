@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slide Toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#topbar").click(function()
+            {
+                // $("#panel").slideDown(1000);
+                // $("#panel").slideUp(1000);
+                $("#panel").slideToggle(1000);
+            });
+        });
+    </script>
+
+    <style>
+        #panel, #topbar{
+            padding: 5px;
+            text-align: center;
+            background-color: yellow;
+            border: solid 1px black;
+        }
+        #panel{
+            padding: 80px;
+            /* display: none; For Slide Down */
+        }
+    </style>
+</head>
+<body>
+    <div id="topbar">View Panel</div>
+    <div id="panel">This is a sample panel content</div>
+</body>
+</html>

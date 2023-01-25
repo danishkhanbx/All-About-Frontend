@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draggable</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <style>
+        #drag{
+            background-color: blue;
+            height: 160px;
+            width: 160px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(function (){
+                $("#drag").draggable();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="drag"></div>
+</body>
+</html>
