@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation & getElementByID method </title>
+    <script>
+
+        function buttonClick()
+        {
+            var str = document.getElementById('heading2').innerHTML = 'Button Clicked';
+            alert(str);
+        }
+
+    </script>
+</head>
+<body>
+
+    <button onclick="buttonClick()"> Click Me</button>
+    <h2 id="heading2">Some Random Text</h2>
+    
+</body>
+</html>

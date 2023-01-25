@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> User Input Radio Button</title>
+    <script>
+
+        function buttonClick()
+        {
+            var s1 = document.getElementById('rd1');
+            var s2 = document.getElementById('rd2');
+            var s3 = document.getElementById('rd3');
+            if(s1.checked==true)
+            {
+                alert('Game level Easy');
+            }
+            else if(s2.checked==true)
+            {
+                alert('Game level Medium');
+            }
+            else if(s3.checked==true)
+            {
+                alert('Game level Hard');
+            }
+            else
+            {
+                alert('Select Game level');
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <input id="rd1" type="radio" value='Easy' name="grp1">Easy<br>
+    <input id='rd2' type="radio" value='Medium' name="grp1">Medium<br>
+    <input id="rd3" type="radio" value='Hard' name="grp1">Hard<br>
+    <button onclick="buttonClick()" id="btn1"> Start Game</button>
+    
+</body>
+</html>

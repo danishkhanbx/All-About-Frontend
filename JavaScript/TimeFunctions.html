@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Functions</title>
+    <script>
+
+        /* 
+        1. setTimeout() allows you to execute statements ONCE, after an interval
+        2. clearTimeout() method clears the timer set by setTimeout()
+        3. setInterval() allows you to execute statements REPEATEDLY after an interval
+        4. clearInterval() method clears a timer set with the setInterval() method
+        */
+
+        var ID = 0;
+        var seconds = 0;
+
+        function printMsg()
+        {
+            document.getElementById('op').innerHTML = seconds + ' seconds here is '+ 17*seconds +' hours on Earth';
+            seconds++;
+        }
+        function start()
+        {
+            ID = window.setInterval(printMsg, 1000);
+        }
+        function stop()
+        {
+            window.clearInterval(ID);
+        }
+        // function start()
+        // {
+        //     ID = window.setTimeout(printMsg, 5000);
+        // }
+        // function stop()
+        // {
+        //     window.clearTimeout(ID);
+        // }
+
+    </script>
+</head>
+<body>
+    <button onclick="start()" id="btnAdd">Start</button>
+    <h2 id="op">Start Comparing Time from Interstellar</h2>
+    <button onclick="stop()" id="btnStop">Stop</button>
+</body>
+</html>

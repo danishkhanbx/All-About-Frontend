@@ -1,0 +1,56 @@
+### Creation ###
+regx = new RegExp('TEXT','FLAGS');
+var regx = /TEXT/FLAGS;
+
+### Flags ###
+g: Global
+i: case insensitive 
+m: multiline
+s: single line
+u: unicode
+y: sticky    
+
+### Symbols  ###
++ : one or more
+? : optional, zero or one
+* : zero or more, combination of + and ?
+. : anything except for full stop
+\. : backslash cancels regex property and treats . as normal full stop to find full stop
+\w : match any word character
+\s : white space
+\W : anything that is not a word character
+\S : anything that is not a white space
+\d : Digit numbers only
+\t : match a tab only
+{4, 5} : minimum 4 char and maximum 5 char
+[] : match any char in the set
+[^] : exclude the char in the set
+() : group words together
+<> : name your group
+^ :  matches only the beginning 
+$ : matches the end of the line when, m flag is enabled multiple lines
+(?<=) : Positive lookbehind to find the word followed by it
+(?<!) : Negative lookbehind
+(?=) : Positive look ahead
+(?!) : Negative look ahead
+/^$/ : exact this string
+
+### Examples ### 
+/Text/flags 
+/can/gi
+e+
+e+a?
+*a
+/.{4, 5}/g
+e{2,3}
+[a-z], [a-zA-Z], [0-9], [^0-9]
+(t|T)he
+(re){2, 3}
+^[Tt]he
+/\.$/gm
+(?<=[Tt]he)
+<phone>
+^[7-9]\d{9}$
+^([a-zA-Z0-9\._-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})(.[a-z]{2,8})?$
+
+

@@ -1,0 +1,1 @@
+document.write('<h1>External Js in separate .js file</h1>')

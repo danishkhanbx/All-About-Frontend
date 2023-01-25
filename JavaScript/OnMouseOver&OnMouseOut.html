@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>On Mouse Over and On Mouse Out</title>
+    <script>
+        function setNewImg()
+        {
+            document.getElementById('img1').src = '/Images/mocha.png';
+
+        }
+        function setOldImg()
+        {
+            document.getElementById('img1').src = '/Images/cappuccino.png';
+        }
+
+    </script>
+</head>
+<body>
+    <img src="/Images/cappuccino.png" id="img1" 
+    onmouseover="setNewImg()" onmouseout="setOldImg()" 
+    width="100px">
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Get Elements By Tag Name</title>
+    <script>
+
+        function buttonClick()
+        {
+            var para = document.getElementsByTagName('p');
+            para[0].style.fontSize = 55;
+            para[1].style.color = 'red';
+            para[2].style.fontWeight = 'bold';
+            para[3].style.fontStyle = 'italic';
+
+            for (var i=0; i<para.length; i++)
+            {
+                para[i].style.backgroundColor = 'blue';
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    
+    <button onclick="buttonClick()">Change Style</button>
+    
+</body>
+</html>

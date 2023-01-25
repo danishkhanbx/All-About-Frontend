@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> User Input Text Box</title>
+    <script>
+
+        function buttonClick()
+        {
+            var p1 = document.getElementById('t1').value;
+            var p2 = document.getElementById('t2').value;
+            if(p1==p2)
+            {
+                alert('Welcome');
+            }
+            else
+            {
+                alert('Wrong Password')
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="password" id="t1" placeholder="Enter Password"> <br>
+    <input id="t2" placeholder="Re-Enter Password"> <br>
+    <button onclick="buttonClick()" id="btn1"> Click Me</button>
+    
+</body>
+</html>

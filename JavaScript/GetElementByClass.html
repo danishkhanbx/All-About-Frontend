@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Get Elements By Class Name</title>
+    <script>
+
+        function buttonClick()
+        {
+            var element = document.getElementsByClassName('mypara');
+            for (var i=0; i<element.length; i++)
+            {
+                element[i].style.color = 'red';
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <p class="mypara">This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <div class="mypara">This is paragraph 3</div>
+    <p>This is paragraph 4</p>
+    <a href='#' class="mypara">This is paragraph 5</a> 
+
+    <br><br>
+    
+    <button onclick="buttonClick()">Change Style</button>
+    
+</body>
+</html>

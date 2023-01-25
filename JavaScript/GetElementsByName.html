@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>get Element By Name</title>
+    <script>
+        function buttonClick()
+        {
+            var counts = document.getElementsByName('gender');
+            alert('Total count of genders are: '+ counts.length);
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="radio" name="gender" value="male">Male <br>
+        <input type="radio" name="gender" value="female">Female <br>
+        <input type="button" value="Count" onclick="buttonClick()">
+
+    </form>
+    
+</body>
+</html>

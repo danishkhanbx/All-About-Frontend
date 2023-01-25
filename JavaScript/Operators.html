@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Operators</title>
+
+    <script type="text/javascript">
+
+        result = 1 + 4 + 'H' + 9 + 1  // left to right
+        // (1+4) = 5 + 'H' = '5H' + 9 + 1 = '5H91'
+        document.write('<h1> Result:'+result+'</h1>');
+
+        // Comparison Operators
+        a = 3;
+        b = '3';
+        c = 3;
+        if (a==b)  // Equal
+        {
+            document.write('Return true if the operands are equal.<br/>');
+        }
+        if (a===c)  // Strict Equal
+        {
+            document.write('Return true if the operands are equal and of the same type.<br/>');
+        }
+
+        // Ternary Operator
+        result = a%2===0 ? 'Even' : 'Odd'
+        document.write(result);
+    </script>
+    
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations - Scale</title>
+    <script>
+
+        var width = 100;
+        var difference = 2;
+        var intervalID = 0;
+
+        function increase()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomIn, 20);
+        }
+        function decrease()
+        {
+            clearInterval(intervalID);
+            intervalID = setInterval(zoomOut, 20);
+        }
+        function zoomIn()
+        {
+            if (width < 200)
+            {
+                width = width + difference;
+                document.getElementById('img1').style.width = width + 'px';
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+        }
+        function zoomOut()
+        {
+            if (width > 100)
+            {
+                width = width - difference;
+                document.getElementById('img1').style.width = width + 'px';
+            }
+            else
+            {
+                clearInterval(intervalID);
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <img id="img1" src="/Images/GamingDog.png" onmouseover="increase()" onmouseout="decrease()" width="100px">
+   
+</body>
+</html>

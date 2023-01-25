@@ -1,0 +1,12 @@
+{
+    "name": "Danish Khan",
+    "age": 20,
+    "married": false,
+    "kids": null,
+    "hobbies": ["Philosophy", "Quantum Computers"],
+    "vehicle":{
+        "name": "nested",
+        "marks": 45,
+        "shop": ["food", "clothes", {"type":"car"}]
+    }
+}

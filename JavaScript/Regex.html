@@ -1,0 +1,35 @@
+<!-- Regexr Website: https://regexr.com --> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regex</title>
+        <script>
+            function validate()
+            {
+                var UserName = document.getElementById('uname').value;
+                var regx = /[sdp]imple/; 
+
+                if (regx.test(UserName))
+                {
+                    alert('Valid UserName');
+                }
+                else
+                {
+                    alert('Invalid UserName');
+                    document.getElementById('lbuster').style.visibility = 'visible';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="HelloWorld.html">
+                <input type="text" id="uname" placeholder="UserName">
+                <label id="lbuster" style= 'color: red; visibility: hidden;'>Invalid UserName</label>
+                <br>
+                <input type="button" value="Submit" onclick="validate();">
+   
+
+        </form>         
+    </body>  
+
+</html>

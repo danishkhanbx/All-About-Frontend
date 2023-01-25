@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> User Input Select Box</title>
+    <script>
+
+        function buttonClick()
+        {
+            var sl = document.getElementById('selectors');
+            alert('Game level '+sl.options[sl.selectedIndex].value);
+        }
+
+    </script>
+</head>
+<body>
+
+    <select id="selectors">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+    
+    <button onclick="buttonClick()">Start Game</button>
+    
+</body>
+</html>

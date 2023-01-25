@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Control Statements</title>
+
+    <script type="text/javascript">
+
+        // IF- ELSE
+        document.write('<h1>if - else</h1>');
+        var x = 2;
+        if(x > 0 && x%3==0)
+        {
+            document.write('<h4> ODD and Positive </h4>');
+        }
+        else if(x<0)
+        {
+            document.write('<h4>Negative</h4>');
+        }
+        else
+        {
+            document.write('<h4>Even</h4>');
+        }
+
+        // SWITCH CASE
+        document.write('<h1>Switch Case</h1>');
+        var day = 7;
+        switch(day)
+        {
+            case 1:
+                document.write('<h4>Sunday</h4>');
+                break;
+
+            case 7:
+                document.write('<h4>Saturday</h4>');
+
+            var name = 'seth';
+            switch(name)
+            {
+                case 'seth':
+                    document.write('<h4>yes thats me</h4>');
+            }
+
+            var dob = 2002;
+            switch(dob + ' dec')
+            {
+                case '2002 dec':
+                    document.write('<h4>yes thats my birthday</h4>');
+                    break;
+            }
+
+        }
+
+        // LOOPS
+
+        document.write('<h1>For Loop:</h1>');
+
+        for(var y=1; y<=10; y++)
+        {
+            document.write('<h5>'+y+' x 5 = '+5*y+'</h5>');
+        }
+
+        document.write('<h1>While Loop:</h1>');
+        
+        var i = 0;
+        while(i<10)
+        {
+            document.write('<h5>'+i+'</h5>');
+            i = i+2;
+        }
+
+        document.write('<h1>Do While Loop:</h1>');
+        
+        var j = 10;
+        do
+        {
+            document.write('<h5>'+j+'</h5>');
+            j = j+2;
+        }while(j<10);
+
+        document.write('<h1>For In Loop:</h1>');
+
+        num = [99, 56, 72, 41, 85]
+        for(let n in num)
+        {
+            document.write('<h5> Key = '+n+' & Value = '+num[n]+'</h5>');
+        }
+
+        document.write('<h1>For OF Loop:</h1>');
+
+        num = [];
+        num[0] = 0;
+        num[9] = 9; 
+        for(let n of num)
+        {
+            document.write('<h5> Value = '+n+'</h5>');
+        }
+
+
+    </script>
+    
+</head>
+
+<body>
+
+</body>
+</html>

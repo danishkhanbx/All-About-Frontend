@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fetch JSON from API and map latitude longitude</title>
+
+    <script>
+        const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';   // from end point
+        async function getISS(){
+            const response = await fetch(api_url);  // retrieve data and stuffed in the variable
+            const data = await response.json();    // converted it into json
+            const {latitude, longitude} = data;   // destructured it into separate variables
+            document.getElementById('lat').textContent = latitude;   // then redisplay it into the webpage element itself
+            document.getElementById('lon').textContent = longitude;
+        }
+        getISS();
+    </script>
+    
+</head>
+<body>
+
+    <h1>Where is the iSS?</h1>
+    <p>latitude: <span id="lat"></span> <br>
+       longitude: <span id="lon"></span>
+    </p>  
+
+</body>
+</html>
