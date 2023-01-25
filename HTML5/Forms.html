@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form accept-charset="utf-8" action="HelloWorld.html" autocomplete="off" method="post" name="Registration-Form" novalidate target="_blank">
+
+            <!-- TEXT BOX-->
+
+            <!--Input-->
+            <div>
+                <label>First Name</label>
+                <input type="text" name="UserName" value="*" maxlength="10">
+            </div>
+            <div>
+                <label>Middle Name</label>
+                <input type="text" name="UserName" value="">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="UserName" value="Khan" maxlength="15">
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <input type="text" name="Phone" placeholder="9356******" maxlength="10">
+            </div>
+            <!--Password-->
+            <div>
+                <label>Password</label>
+                <input type="password" name="Password" maxlength="30" required>
+            </div>
+
+            <!--DATE-->
+            <div>
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+
+            <!--RADIO BUTTONS-->
+            <div>
+                <h4>Gender</h4>
+                <input type="radio" name="Gender" checked> <label>Male</label> <br>
+                <input type="radio" name="Gender"> <label>Female</label> <br>
+            </div>
+
+            <!--CHECK BOX-->
+            <div>
+                <h4>Hobbies</h4>
+                <input type="checkbox" name="" checked> <label>Economics</label> <br>
+                <input type="checkbox" name="" checked> <label>Psychology</label> <br>
+                <input type="checkbox" name=""> <label>Finance</label> <br>
+                <input type="checkbox" name=""> <label>Business</label> <br>
+                <input type="checkbox" name="" > <label>Algorithms</label> <br>
+                <input type="checkbox" name=""> <label>Social Science</label> <br>
+            </div>
+
+            <!--TEXT AREA-->
+            <h4>Why Should we hire you?</h4>
+            <textarea rows="20" cols="100"></textarea>
+
+            <!--SELECT-->
+            <div>
+                <h4>Education Qualification</h4>
+                <select size='2' multiple>
+                    <option name="Course" selected>10+2</option>
+                    <option>UnderGraduate</option>
+                    <option>PostGraduate</option>
+                    <option>Phd</option>
+                </select>
+            </div>
+
+            <div>
+                <h4>Languages</h4>
+                <select>
+                    <option>C Programming</option>
+                    <option>C++</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>JavaScript</option>
+                </select>
+            </div>
+
+            <!--FILE UPLOAD-->
+            <h4>Upload Resume</h4>
+            <input type="file" name="file" accept=".txt">
+            <br><br>
+
+            <!--BUTTONS-->
+            <div>
+                <!--Submit-->
+                <input type="submit" name="submit" value="Submit">
+                <!--Reset-->
+                <input type="reset" name="reset" value="Reset">
+                <!--Custom-->
+                <input type="button" name="custom" value="Click Me">
+                <!--Image-->
+                <input type="image" name="imgButton" src="/Images/GamingDog.png" width="50" height="20">
+            </div>
+
+        </form>         
+    </body>  
+
+</html>

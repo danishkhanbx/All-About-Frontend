@@ -1,0 +1,39 @@
+tabel, th, td, tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+
+.pricing-tabel{
+    width: 100%;
+    border: 2px solid green;
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.caption-heading{
+    color: lightblue;
+}
+
+th{
+    background-color:#32a87d;
+    height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+td{
+    height: 50px;
+    font-size: 21px;
+    color: #7c4c29;
+}
+
+.tr-out-of-stock:hover{
+    background-color: red;
+}
+
+.tr-in-of-stock:hover{
+    background-color: lightgreen;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Script Tag</title>
+
+        <br>
+        <script type="text/javascript">
+            document.write('Normal Internal JavaScript Part:')
+            document.write('Load Html -> Load JS -> Js execute -> Html execute')
+        </script>
+
+        <br>
+        <script type="text/javascript" async="true">
+            document.write('Asynchronous Internal JavaScript Part:')
+            document.write('Load Html +-> Load JS -> Js execute -> Html execute')
+        </script>
+
+        <br>
+        <script type="text/javascript" defer="true">
+            document.write('Differ Internal JavaScript Part:')
+            document.write('Load Html +-> Load JS +-> Html execute -> Js execute')
+        </script>
+
+        <br>
+        <script type="text/javascript" src="ScriptTag.js">
+        </script>
+
+    </head>
+    
+    <body>
+        <p>HTML Part</p>  
+    </body>  
+
+</html>

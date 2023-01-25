@@ -1,0 +1,21 @@
+.available-coffee{
+    color: orange;
+    height: 330px;
+    width: 330px;
+}
+.out-of-stock{
+    background-color: red;
+}
+
+.in-stock{
+    background-color: green;
+}
+
+#mocha{
+    color: green;
+}
+
+.div-img{
+    height: 80%;
+    width: 100%;
+}

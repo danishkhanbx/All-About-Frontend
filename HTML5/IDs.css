@@ -1,0 +1,9 @@
+.available-coffee{
+    color: orange;
+}
+.out-of-stock{
+    background-color: red;
+}
+#mocha{
+    color: green;
+}

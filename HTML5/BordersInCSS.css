@@ -1,0 +1,38 @@
+.available-coffee{
+    color: orange;
+    height: 330px;
+    width: 330px;
+}
+.out-of-stock{
+    border-top-color: red;
+    border-top-style: dotted;
+    border-top-width: 2px;
+
+    border-bottom-color: rgb(248, 133, 3);
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+
+    border-left-color: rgb(231, 15, 137);
+    border-left-style: dotted;
+    border-left-width: 2px;
+
+    border-right-color: blue;
+    border-right-style: dotted;
+    border-right-width: 2px;
+}
+
+.in-stock{
+    border: 4px double green;
+    border-color: green;
+    border-width: 4px;
+    border-style: double;
+}
+
+#mocha{
+    color: green;
+}
+
+.div-img{
+    height: 80%;
+    width: 100%;
+}

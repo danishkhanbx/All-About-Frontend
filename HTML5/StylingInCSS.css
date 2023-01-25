@@ -1,0 +1,30 @@
+.available-coffee{
+    color: orange;
+    height: 330px;
+    width: 330px;
+}
+.out-of-stock{
+    border: 2px dotted red;
+
+    font-size: 17px;
+    font-style: italic;
+    font-family: Georgia;
+}
+
+.in-stock{
+    border: 4px double green;
+    border-color: green;
+    border-width: 4px;
+    border-style: double;
+
+    font: italic small-caps bold 16px cursive;
+}
+
+#mocha{
+    color: green;
+}
+
+.div-img{
+    height: 80%;
+    width: 100%;
+}
