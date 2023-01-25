@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overflow</title>
+    <style>
+        .word{
+            border: 3px solid black;
+            font-size: 200%;
+            width: 80px;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="word" style="overflow: hidden;">Overflow</div>
+    <div class="word" style="overflow: visible;">Overflow</div>
+    <div class="word" style="overflow: scroll;">Overflow</div>
+    <div class="word" style="overflow: auto;">Overflow</div>
+
+    <div class="box"><img src="/Images/GamingDog.png" style="height: 100%; width: 100%;"></div>
+    <div class="box"><img src="/Images/GamingDog.png" style="height: 100%; width: 100%; object-fit: contain;"></div>
+    <div class="box"><img src="/Images/GamingDog.png" style="height: 100%; width: 100%; object-fit: cover;"></div>
+    <div class="box"><img src="/Images/GamingDog.png" style="height: 100%; width: 100%; object-fit: fill;"></div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+.container{
+    height: 1200px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.absolute{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    position: absolute;
+}
+
+.relative{
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+    position: relative;
+    left: 15px;
+    top: 40px;
+}
+
+.fixed{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+    position: fixed;
+    bottom: 0px;
+}
+
+.sticky{
+    height: 50px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 10px;
+}

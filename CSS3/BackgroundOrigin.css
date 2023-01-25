@@ -1,0 +1,29 @@
+body{
+    background-image: url(/Images/GamingDog.png);
+    background-size: cover;
+}
+.box{
+    width: 640px;
+    height: 400px;
+    margin: 50px auto;
+    color: #ff0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 40px dotted #ff0;
+    padding: 40px;
+    background-image: url(/Images/GamingDog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;  /*default: padding box, content box, border box*/
+}
+
+.box p{
+    margin: 20px 0px 0px 0px;
+    float: left;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 30px;
+    font-family: tahoma;
+}
+
+.box h1{
+    font-size: 55px;
+}

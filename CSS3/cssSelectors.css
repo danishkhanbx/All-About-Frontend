@@ -1,0 +1,37 @@
+/* Universal Selector */
+*{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Class Selector */
+.myclass{
+    color: rebeccapurple;
+}
+
+/* ID Selector */
+#myName{
+    background-color: aqua;
+}
+
+/* Element Type Selector */
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid beige;
+}
+
+/* Attribute Selector */
+[href]{
+    color: red;
+}
+
+/* Grouping Selector */
+h4, h3{
+    color: yellow;
+}
+
+/* Combinator Selector */
+.family-line{
+    color: rgba(0, 237, 39, 0.253);
+}

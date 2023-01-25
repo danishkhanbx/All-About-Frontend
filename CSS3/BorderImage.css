@@ -1,0 +1,9 @@
+.box {
+    margin: 50px auto;
+    padding: 20px;
+    width: 240px;
+    height: 220px;
+    border: 20px solid;
+    border-image-source: url(/Images/BorderImage.png);
+    border-image-slice: 90;
+}

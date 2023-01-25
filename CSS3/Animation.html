@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            position: relative;
+
+            /* animation-name: leo; */
+            animation-name: k;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            /* animation-timing-function: ease-out;
+            animation-delay: 2s;
+            animation-direction: reverse; 
+            animation-fill-mode: forwards; */
+
+            /* Animation: name duration timing-function delay iteration-count direction fill-mode */
+            animation: leo 2s ease-out 2s 3 reverse forwards;
+
+        }
+
+        @keyframes k{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+
+
+        }
+
+        @keyframes leo{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>

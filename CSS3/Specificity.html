@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Specificity.css">
+    <title>Specificity</title>
+    <style>
+        .fav1{
+            color: red;
+        }
+        .fav1{
+            color: blue;
+        }
+
+        .fav2{
+            color: brown;
+            font-weight: bold;
+        }
+        /* Higher Specificity will be applied always */
+        li.fav2{
+            font-size: 12px;
+            font-weight: normal;
+            color: black;
+        }
+        
+        .fav3{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Specificity chooses the nearest style value from the text and apply it. -->
+    <ul id="summer">
+        <li class="fav1" style="color: pink;">Mountain</li>
+        <li class="fav2">Appy Fizz</li>
+        <li class="fav3">Jeera</li>
+    </ul>
+    
+</body>
+</html>

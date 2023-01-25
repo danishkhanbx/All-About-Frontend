@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Flexbox</title>
+    <style>
+        body{ font-family: Arial, Helvetica; }
+        h1{padding: 0 0 0 40px;}
+
+        .container{
+            background: #eee;
+            margin: 50px auto 0;
+            padding: 0px;
+            border: 3px solid #000;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .items{
+            color:#fff; 
+            font-size: 20px; 
+            font-weight: bold;
+            text-align: center; 
+            margin: 0px; 
+            padding: 0px;
+            height: 60px;
+            flex-grow: 1;
+        }
+        .item1{background-color: orangered;}
+        .item2{background-color: yellowgreen;
+            display: flex;
+        }
+        .item2 > .subitem{
+            flex-grow: 1;
+            color: yellowgreen;
+            background-color: grey;
+            margin: 5px;
+        }
+        .item3{background-color: mediumpurple;}
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">
+            <div class="subitem subitem1">A</div>
+            <div class="subitem subitem2">B</div>
+            <div class="subitem subitem3">C</div>
+        </div>
+        <div class="items item3">Three</div>
+    </div>
+    
+</body>
+</html>

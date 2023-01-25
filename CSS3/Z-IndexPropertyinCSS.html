@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Z Index Property</title>
+</head>
+<body>
+    <div style="
+    height: 500px; width: 50%;
+    border: 2px solid red; 
+    position: relative;
+    float: right;">
+
+    <!--Without Z index-->
+        <div style="
+        height: 100px; width: 120px; background-color: green; 
+        position:absolute; top: 0px; left: 10px;"> </div>
+        <div style="
+        height: 100px; width: 100px; background-color: yellow; 
+        position: absolute; top: 0px; left: 10px;"> </div>
+        
+        <br>
+    
+    <!--With Z index-->
+        <div style="
+        height: 100px; width: 100px; background-color: green; 
+        position:absolute; top: 120px; left: 10px; z-index: 1;"> </div>
+        <div style="
+        height: 100px; width: 120px; background-color: yellow; 
+        position: absolute; top: 120px; left: 10px;"> </div>
+    </div>
+    
+</body>
+</html>

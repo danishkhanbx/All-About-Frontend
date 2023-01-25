@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transition</title>
+    <style>
+        
+        #box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 200px;
+            width: 200px;
+
+            /* transition-property: background-color;
+            transition-duration: 5s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s; */
+
+            /* Transition: transition-property transition-duration transition-timing-function transition-delay */
+            /* transition: background-color 5s ease-out 1s; */
+            transition: all 1s ease-out .5s;
+
+        }
+
+        #box:hover{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            border-radius: 50;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgba(43, 193, 96, 0.97);">
+    <div class="container">
+        <div id="box">
+            This is a box
+        </div>
+    </div>
+    
+</body>
+</html>
