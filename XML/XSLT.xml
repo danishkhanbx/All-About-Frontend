@@ -1,0 +1,17 @@
+<?xml-stylesheet type="text/xsl" href="XSLT.xsl"?>
+<!-- Extensible Styling Language -->
+
+<class>
+    <student>
+        <firstname>Graham</firstname>
+        <lastname>Bell</lastname>
+    </student>
+    <student>
+        <firstname>Thomsa</firstname>
+        <lastname>Edison</lastname>
+    </student>
+    <student>
+        <firstname>Albert</firstname>
+        <lastname>Einstein</lastname>
+    </student>
+</class>

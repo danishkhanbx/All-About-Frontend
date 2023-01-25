@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Structure -> DTD -> Document type definition -->
+<!DOCTYPE aliens SYSTEM "DTD.dtd">
+
+<aliens>
+    <alien aid='a1' lang='Java'>
+        <name>Khan</name>
+        <rollno>17</rollno>
+    </alien>
+    <alien aid='a2' lang='Python'>
+        <name>Khan</name>
+        <rollno>17</rollno>
+    </alien>
+</aliens>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:globalaliens 
+xmlns:tns="http://www.telusko.com/AlienSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.telusko.com/AlienSchema Schema.xsd">
+    
+    <tns:alien aid='a1'>
+        <tns:name>Khan</tns:name>
+        <tns:rollno>17</tns:rollno>
+    </tns:alien>
+     <tns:alien aid='a2'>
+        <tns:name>Danish</tns:name>
+        <tns:rollno>16</tns:rollno>
+    </tns:alien>
+</tns:globalaliens>

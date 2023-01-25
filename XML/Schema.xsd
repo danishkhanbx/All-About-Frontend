@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Structure + Content -> Schema -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.telusko.com/AlienSchema"
+xmlns:tns="http://www.telusko.com/LAlienSchema"
+elementFormDefault="qualified">
+
+<complexType name='alienstype'>
+    <sequence>
+        <element name='alien' type='tns:alientype' maxOccurs='3' minOccurs='1'></element>
+    </sequence>
+</complexType>
+
+<complexType name='alientype'>
+    <sequence>
+        <element name='name' type='string'></element>
+        <element name='rollno' type='myRoll'></element>
+    </sequence>
+    <attribute name='aid' type='ID' use='required'></attribute>
+</complexType>
+
+<element name='globalaliens' type='tns:alienstype'/>
+
+<simpleType name='myRoll'>
+    <restrictions base='integer'>
+        <minInclusive value='1'></minInclusive> 
+        <maxInclusive value='100'></maxInclusive>
+    </restrictions>
+</simpleType>
+
+</schema>
